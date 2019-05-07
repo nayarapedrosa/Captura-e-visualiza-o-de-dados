@@ -1,0 +1,28 @@
+import requests
+from product import Product
+#Extrair anuncios do Mercado livre 
+
+
+url = 'https://celulares.mercadolivre.com.br/' 
+# url = "https://lista.mercadolivre.com.br/celular-samsung#D[A:celular%20samsung]"
+
+class Printer():
+
+    def __init__(self,data):
+        sys.stdout.write("\r"+data.__str__())
+        sys.stdout.flush()
+def grab():
+	
+	links = []
+	products =[]
+	print 'pegando dados da paginacao'
+	pages = getPagination()
+	print 'pegando links'
+	for page in pages:
+		for link in getPaginationList(page):
+			links.append(link)
+	print 'Total Links ' + str(len(links))
+	print 'Gerando dados dos produtos'
+	counter = 0
+
+	return products 
