@@ -1,4 +1,0 @@
-conda install-c conda-forge scrapy
-cd C:\Users\Analu\Documents\analu-exercicio
-C:\Users\Analu\Documents\analu-exercicio>scrapy runspider quesito2.py
-C:\Users\Analu\Documents\analu-exercicio>scrapy runspider quesito1.py
